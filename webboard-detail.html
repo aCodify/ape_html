@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html lang="en-US" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-US" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-US" class="ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en-US" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>APE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+	<meta property="og:type" content="business" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="Rating" content="general" /> 
+	<meta name="ROBOTS" content="index, follow" /> 
+	<meta name="GOOGLEBOT" content="index, follow" /> 
+	<meta name="FAST-WebCrawler" content="index, follow" /> 
+	<meta name="Scooter" content="index, follow" /> 
+	<meta name="Slurp" content="index, follow" /> 
+	<meta name="REVISIT-AFTER" content="7 days" /> 
+	<meta name="distribution" content="global" />
+	<meta name="copyright" content="" /> 
+	<link rel="shortcut icon" type="image/x-icon" href="public/images/icons/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/non-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="public/components/selectbox/css/customSelectBox.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/front.css" />
+    
+    <script type="text/javascript" src="public/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="public/js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="public/js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="public/components/selectbox/js/SelectBox.js"></script>    
+    <script type="text/javascript" src="public/js/script.js"></script>    
+    <!--[if lt IE 9]>
+    	<script type="text/javascript" src="public/js/html5shiv.js"></script>
+    <![endif]-->
+    <script>
+		jQuery().ready(function(){
+			$('.quick--comment').click(function(){
+				$('.webboard__quick--comment').show();
+				$('body,html').animate({
+				scrollTop: $(document).height()}, 1000);
+				return false;
+			});
+			
+			$(".webboard__detail--quote").click(function(){
+				var id = $(this).attr('id');
+				$(".quote_box").slideUp();
+				$('#box_'+id).slideDown();
+			});
+			
+			$(".close_quote").click(function(){
+				$(".quote_box").slideUp();
+			});
+		});
+		
+		
+	</script>
+</head>
+<body>
+	
+    <header>
+    	<div class="header">
+        	<div class="container">
+            	<a href="index.html" class="header__logo"><img src="public/images/logo.png"/></a>
+                <div class="header__wrap">
+                	<div class="header__wg">
+                    	<div class="header__wg--text">
+                        	<img src="public/images/company-name.png"/>
+                        </div>
+                        <div class="header__wg--search">
+                        	<input type="text" placeholder="Search">
+                            <input type="button" class="hoverOpa">
+                        </div>
+                        <div class="header__wg--register">
+                        	<a href="register.html" class="hoverOpa">ลงทะเบียน</a>
+                        </div>
+                        <div class="header__wg--login">
+                        	<a href="login.html" class="hoverOpa">เข้าสู่ระบบ</a>
+                        </div>
+                        <div class="header__wg--lang">
+                        	<select class="custom" name="countriesFlag">
+                            	<option class="th">Thai</option>
+                                <option class="en">Eng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                    	<ul>
+                        	<li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="service.html">Engineering Service</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="news-event.html">News &amp; Event</a></li>
+                            <li class="active"><a href="webboard.html">Webboard</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+    	<article>
+        
+        	<div class="content">
+            	<div class="container">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Webboard.html">Webboard</a></li>
+                        <li><a href="Webboard-topic.html">ห้องสนทนา : XXXXXXXXXX</a></li>
+                        <li class="active"><a href="javascript:void(0)">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus.</a></li>
+                    </ol>
+                    <h1 class="page__header">
+                    	<span>Web</span>board
+                    </h1>
+                    <div class="wrap__content">
+                    	<div class="webboard">
+                        	<div class="webboard__head">
+                            	<div class="webboard__head--btn">
+                            		<a href="javascript:void(0)" class="btn-gray quick--comment">ตอบกระทู้</a>
+                                </div>
+                            </div>
+                        	<table class="webboard__table">
+                            	<thead>
+                                	<tr>
+                                    	<td>
+                                        	ห้องกระทู้ : Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus.
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                	<tr>
+                                    	<td>
+                                        	<div class="webboard__detail">
+                                            	<div class="webboard__detail--member">
+                                                	<div class="webboard__detail--username">lucksolno01</div>
+                                                    <div class="webboard__detail--profile">
+                                                    	<img src="public/images/upload/webboard/avatar.jpg"/>
+                                                    </div>
+                                                    <div class="webboard__detail--join">เข้าร่วม : 16 Feb 2009</div>
+                                                    <div class="webboard__detail--ans">ตอบ : 90010</div>
+                                                </div>
+                                                <div class="webboard__detail--post">
+                                                	<div class="webboard__detail--head">
+                                                        <div class="webboard__detail--time">Fri 18 Jul, 2014 13:38</div>
+                                                        <div class="webboard__detail--btn">
+                                                            <a href="javascript:void(0)" id="quote_01" 
+                                                            class="webboard__detail--quote">
+                                                            	อ้างอิง
+                                                            </a>
+                                                            <a href="javascript:void(0)" class="webboard__detail--delete">
+                                                            	แจ้งลบ
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="webboard__detail--text">
+                                                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit faucibus.
+                                                    </div>    
+                                                    <div class="panel-group" id="accordion">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" 
+                                                                    href="#collapseOne">
+                                                                    ดู 2 ความเห็นย่อย
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseOne" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="webboard__detail--quoteAns">
+                                                                        <div class="topic">ความคิดเห็นที่ 1-1</div>
+                                                                        <div class="detail">
+                                                                            Lorem ipsum dolor sit amet, 
+                                                                            consectetur adipiscing faucibus.
+                                                                        </div>
+                                                                        <span class="user">ตอบโดย : kungmar</span>
+                                                                        <span class="date">Fri 18 Jul,2014 13:38</span>
+                                                                    </div>
+                                                                    <div class="webboard__detail--quoteAns">
+                                                                        <div class="topic">ความคิดเห็นที่ 1-2</div>
+                                                                        <div class="detail">
+                                                                            Lorem ipsum dolor sit amet, 
+                                                                            consectetur adipiscing faucibus.
+                                                                        </div>
+                                                                        <span class="user">ตอบโดย : kungmar</span>
+                                                                        <span class="date">Fri 18 Jul,2014 13:38</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quote_box" id="box_quote_01" style="display:none;">
+                                                <div class="form">
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>รายละเอียด :</label></div>
+                                                        <div class="wrap--input"><textarea></textarea></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>ตอบกระทู้ :</label></div>
+                                                        <div class="wrap--input">
+                                                            <input type="text" value="Kungmars">
+                                                            <div class="wrap--btn">
+                                                                <a href="javascript:void(0)" class="btn-gray close_quote">
+                                                                CANCEL</a>
+                                                                <a href="javascript:void(0)" class="btn-gray">POST</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td>
+                                        	<div class="webboard__detail">
+                                            	<div class="webboard__detail--member">
+                                                	<div class="webboard__detail--username">lucksolno01</div>
+                                                    <div class="webboard__detail--profile">
+                                                    	<img src="public/images/upload/webboard/avatar.jpg"/>
+                                                    </div>
+                                                    <div class="webboard__detail--join">เข้าร่วม : 16 Feb 2009</div>
+                                                    <div class="webboard__detail--ans">ตอบ : 90010</div>
+                                                </div>
+                                                <div class="webboard__detail--post">
+                                                	<div class="webboard__detail--head">
+                                                        <div class="webboard__detail--time">Fri 18 Jul, 2014 13:38</div>
+                                                        <div class="webboard__detail--btn">
+                                                            <a href="javascript:void(0)" id="quote_02" 
+                                                            class="webboard__detail--quote">
+                                                            	อ้างอิง
+                                                            </a>
+                                                            <a href="javascript:void(0)" class="webboard__detail--delete">
+                                                            	แจ้งลบ
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="webboard__detail--text">
+                                                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit faucibus.
+                                                    </div>
+                                                    <div class="panel-group" id="accordion">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" 
+                                                                    href="#collapseTwo">
+                                                                    ดู 1 ความเห็นย่อย
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseTwo" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="webboard__detail--quoteAns">
+                                                                        <div class="topic">ความคิดเห็นที่ 2-1</div>
+                                                                        <div class="detail">
+                                                                            Lorem ipsum dolor sit amet, 
+                                                                            consectetur adipiscing faucibus.
+                                                                        </div>
+                                                                        <span class="user">ตอบโดย : kungmar</span>
+                                                                        <span class="date">Fri 18 Jul,2014 13:38</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quote_box" id="box_quote_02" style="display:none;">
+                                                <div class="form">
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>รายละเอียด :</label></div>
+                                                        <div class="wrap--input"><textarea></textarea></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>ตอบกระทู้ :</label></div>
+                                                        <div class="wrap--input">
+                                                            <input type="text" value="Kungmars">
+                                                            <div class="wrap--btn">
+                                                                <a href="javascript:void(0)" class="btn-gray close_quote">
+                                                                CANCEL</a>
+                                                                <a href="javascript:void(0)" class="btn-gray">POST</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td>
+                                        	<div class="webboard__detail">
+                                            	<div class="webboard__detail--member">
+                                                	<div class="webboard__detail--username">lucksolno01</div>
+                                                    <div class="webboard__detail--profile">
+                                                    	<img src="public/images/upload/webboard/avatar.jpg"/>
+                                                    </div>
+                                                    <div class="webboard__detail--join">เข้าร่วม : 16 Feb 2009</div>
+                                                    <div class="webboard__detail--ans">ตอบ : 90010</div>
+                                                </div>
+                                                <div class="webboard__detail--post">
+                                                	<div class="webboard__detail--head">
+                                                        <div class="webboard__detail--time">Fri 18 Jul, 2014 13:38</div>
+                                                        <div class="webboard__detail--btn">
+                                                            <a href="javascript:void(0)" id="quote_03" 
+                                                            class="webboard__detail--quote">
+                                                            	อ้างอิง
+                                                            </a>
+                                                            <a href="javascript:void(0)" class="webboard__detail--delete">
+                                                            	แจ้งลบ
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="webboard__detail--text">
+                                                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit faucibus.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quote_box" id="box_quote_03" style="display:none;">
+                                                <div class="form">
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>รายละเอียด :</label></div>
+                                                        <div class="wrap--input"><textarea></textarea></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>ตอบกระทู้ :</label></div>
+                                                        <div class="wrap--input">
+                                                            <input type="text" value="Kungmars">
+                                                            <div class="wrap--btn">
+                                                                <a href="javascript:void(0)" class="btn-gray close_quote">
+                                                                CANCEL</a>
+                                                                <a href="javascript:void(0)" class="btn-gray">POST</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td>
+                                        	<div class="webboard__detail">
+                                            	<div class="webboard__detail--member">
+                                                	<div class="webboard__detail--username">lucksolno01</div>
+                                                    <div class="webboard__detail--profile">
+                                                    	<img src="public/images/upload/webboard/avatar.jpg"/>
+                                                    </div>
+                                                    <div class="webboard__detail--join">เข้าร่วม : 16 Feb 2009</div>
+                                                    <div class="webboard__detail--ans">ตอบ : 90010</div>
+                                                </div>
+                                                <div class="webboard__detail--post">
+                                                	<div class="webboard__detail--head">
+                                                        <div class="webboard__detail--time">Fri 18 Jul, 2014 13:38</div>
+                                                        <div class="webboard__detail--btn">
+                                                            <a href="javascript:void(0)" id="quote_04" 
+                                                            class="webboard__detail--quote">
+                                                            	อ้างอิง
+                                                            </a>
+                                                            <a href="javascript:void(0)" class="webboard__detail--delete">
+                                                            	แจ้งลบ
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="webboard__detail--text">
+                                                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit faucibus.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quote_box" id="box_quote_04" style="display:none;">
+                                                <div class="form">
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>รายละเอียด :</label></div>
+                                                        <div class="wrap--input"><textarea></textarea></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>ตอบกระทู้ :</label></div>
+                                                        <div class="wrap--input">
+                                                            <input type="text" value="Kungmars">
+                                                            <div class="wrap--btn">
+                                                                <a href="javascript:void(0)" class="btn-gray close_quote">
+                                                                CANCEL</a>
+                                                                <a href="javascript:void(0)" class="btn-gray">POST</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td>
+                                        	<div class="webboard__detail">
+                                            	<div class="webboard__detail--member">
+                                                	<div class="webboard__detail--username">lucksolno01</div>
+                                                    <div class="webboard__detail--profile">
+                                                    	<img src="public/images/upload/webboard/avatar.jpg"/>
+                                                    </div>
+                                                    <div class="webboard__detail--join">เข้าร่วม : 16 Feb 2009</div>
+                                                    <div class="webboard__detail--ans">ตอบ : 90010</div>
+                                                </div>
+                                                <div class="webboard__detail--post">
+                                                	<div class="webboard__detail--head">
+                                                        <div class="webboard__detail--time">Fri 18 Jul, 2014 13:38</div>
+                                                        <div class="webboard__detail--btn">
+                                                            <a href="javascript:void(0)" id="quote_05" 
+                                                            class="webboard__detail--quote">
+                                                            	อ้างอิง
+                                                            </a>
+                                                            <a href="javascript:void(0)" class="webboard__detail--delete">
+                                                            	แจ้งลบ
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="webboard__detail--text">
+                                                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit faucibus.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quote_box" id="box_quote_05" style="display:none;">
+                                                <div class="form">
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>รายละเอียด :</label></div>
+                                                        <div class="wrap--input"><textarea></textarea></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="wrap--label"><label>ตอบกระทู้ :</label></div>
+                                                        <div class="wrap--input">
+                                                            <input type="text" value="Kungmars">
+                                                            <div class="wrap--btn">
+                                                                <a href="javascript:void(0)" class="btn-gray close_quote">
+                                                                CANCEL</a>
+                                                                <a href="javascript:void(0)" class="btn-gray">POST</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination">
+                                <ul>
+                                    <li class="nav pagination__prev"><a href="javascript:void(0)"></a></li>
+                                    <li class="active"><a href="javascript:void(0)">1</a></li>
+                                    <li><a href="javascript:void(0)">2</a></li>
+                                    <li><a href="javascript:void(0)">3</a></li>
+                                    <li><a href="javascript:void(0)">4</a></li>
+                                    <li><a href="javascript:void(0)">5</a></li>
+                                    <li class="nav pagination__next"><a href="javascript:void(0)"></a></li>
+                                </ul>
+                                <div class="webboard__detail--comment">
+                                	<a href="javascript:void(0)" class="btn-gray quick--comment">ตอบกระทู้</a>
+                                </div>
+                            </div>
+                            <div class="webboard__quick--comment">
+                            	<div class="form">
+                                	<div class="form-group">
+                                    	<div class="wrap--label"><label>รายละเอียด :</label></div>
+                                        <div class="wrap--input"><textarea></textarea></div>
+                                    </div>
+                                    <div class="form-group">
+                                    	<div class="wrap--label"><label>ตอบกระทู้ :</label></div>
+                                        <div class="wrap--input">
+                                        	<input type="text" value="Kungmars">
+                                        	<div class="wrap--btn">
+                                                <a href="javascript:void(0)" class="btn-gray">CANCEL</a>
+                                                <a href="javascript:void(0)" class="btn-gray">POST</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+    </section>
+    <footer>
+    	<div class="footer" id="foot_page">
+        	<div class="container">
+            	<img src="public/images/logo-small.png" class="logo"/>
+                © 2013 CopyRight by Advanced Power Equipment(Thailand) Co., Ltd. , Powered by 
+                <a href="http://www.bizidea.co.th" target="_blank">Biz idea</a>
+                <div class="footer__back">
+                	<a href="javascript:void(0)" class="hoverOpa" id="top">GO TO TOP</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

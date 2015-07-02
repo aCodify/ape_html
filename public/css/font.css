@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'DB-FongnamX';
+	src: url('../fonts/db fongnam x.eot');
+	src: local('☺'), 
+		 url('../fonts/db fongnam x.woff') format('woff'), 
+		 url('../fonts/db fongnam x.ttf') format('truetype'), 
+		 url('../fonts/db fongnam x.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DB-FongnamX-Bold';
+	src: url('../fonts/db fongnam x bd.eot');
+	src: local('☺'), 
+		 url('../fonts/db fongnam x bd.woff') format('woff'), 
+		 url('../fonts/db fongnam x bd.ttf') format('truetype'), 
+		 url('../fonts/db fongnam x bd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
